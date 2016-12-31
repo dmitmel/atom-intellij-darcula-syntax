@@ -1,0 +1,26 @@
+.source.python {
+    .support.magic {
+        &.function,
+        &.variable {
+            color      : @light-red;
+            font-weight: normal;
+        }
+    }
+
+    .entity.function.decorator:extend(.storage.type.annotation){}
+
+    .meta {
+        &.decorator,
+        &.function-call,
+        &.method-call {
+            .arguments .variable.parameter {
+                color: @light-red;
+            }
+        }
+    }
+
+    .string > .storage.type.string {
+        color      : @syntax-color-string;
+        font-weight: normal;
+    }
+}

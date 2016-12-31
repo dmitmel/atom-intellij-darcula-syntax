@@ -1,0 +1,30 @@
+.source.shell {
+    .string {
+        &.interpolated,
+        &.other {
+            color: @syntax-text-color;
+            & > .punctuation.begin,
+            & > .punctuation.end {
+                color      : @syntax-color-keyword;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .string.backtick {
+        color: @syntax-color-keyword;
+    }
+
+    .punctuation.definition.logical-expression {
+        color      : @syntax-color-keyword;
+        font-weight: bold;
+    }
+
+    .keyword.operator {
+        &.list,
+        &.logical {
+            color      : @syntax-color-keyword;
+            font-weight: bold;
+        }
+    }
+}

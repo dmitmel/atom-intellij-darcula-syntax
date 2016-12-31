@@ -1,0 +1,17 @@
+{
+  "name": "intellij-darcula-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "Theme for atom inspired by JetBrain's Darcula theme.",
+  "keywords": [
+    "syntax",
+    "theme",
+    "dark",
+    "darcula"
+  ],
+  "repository": "https://github.com/dmitmel/atom-intellij-dracula-syntax.git",
+  "license": "Apache-2.0",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

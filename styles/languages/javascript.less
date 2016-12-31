@@ -1,0 +1,34 @@
+.source.js {
+    .keyword.operator {
+        &.delete,
+        &.in,
+        &.instanceof,
+        &.new,
+        &.of,
+        &.typeof,
+        &.void {
+            color      : @syntax-color-keyword;
+            font-weight: bold !important;
+        }
+    }
+
+    .comment.documentation .jsdoc {
+        &.type.class {
+            color          : @syntax-color-doc-comment-tag;
+            text-decoration: underline;
+        }
+
+        &.variable.other {
+            color: @syntax-color-parameter;
+        }
+
+        &.entity.name.type.instance {
+            color: @syntax-color-class;
+        }
+    }
+
+    .entity.name.function.constructor {
+        color      : @syntax-color-keyword;
+        font-weight: bold;
+    }
+}

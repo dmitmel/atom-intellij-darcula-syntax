@@ -1,0 +1,97 @@
+@import (reference) "colors";
+
+// General colors
+@syntax-text-color                      : @syntax-fg;
+@syntax-cursor-color                    : @syntax-accent;
+@syntax-selection-color                 : lighten(@syntax-background-color, 10%);
+@syntax-selection-flash-color           : @syntax-accent;
+@syntax-background-color                : @syntax-bg;
+@syntax-cursor-line                     : hsla(@syntax-hue, 100%, 80%, .04); // needs to be semi-transparent to show serach results
+
+// Guide colors
+@syntax-wrap-guide-color                : @syntax-guide;
+@syntax-indent-guide-color              : @syntax-guide;
+@syntax-invisible-character-color       : @syntax-guide;
+
+// For find and replace markers
+@syntax-result-marker-color             : @syntax-fg;
+@syntax-result-marker-color-selected    : @syntax-accent;
+
+// Gutter colors
+@syntax-gutter-text-color               : @syntax-gutter;
+@syntax-gutter-text-color-selected      : @syntax-fg;
+@syntax-gutter-background-color         : @syntax-bg; // unused
+@syntax-gutter-background-color-selected: lighten(@syntax-bg, 10%);
+
+// Git colors - For git diff info. i.e. in the gutter
+@syntax-color-renamed                   : hsl(208, 100%, 60%);
+@syntax-color-added                     : hsl(150, 60%, 54%);
+@syntax-color-modified                  : hsl(40, 60%, 70%);
+@syntax-color-removed                   : hsl(0, 70%, 60%);
+
+// For language entity colors
+
+// General language colors
+@syntax-color-todo                      : #A8C023;
+@syntax-color-keyword                   : @dark-orange;
+@syntax-color-import                    : @syntax-text-color;
+@syntax-color-comment                   : #808080;
+@syntax-color-doc-comment               : @dark-green;
+@syntax-color-doc-comment-tag           : @light-yellow;
+@syntax-color-operator                  : @syntax-text-color;
+@syntax-color-parameter                 : @syntax-text-color;
+
+// Punctuation
+@syntax-color-dot                       : @syntax-text-color;
+@syntax-color-comma                     : @dark-orange;
+@syntax-color-semicolon                 : @dark-orange;
+@syntax-color-brace                     : @syntax-text-color;
+@syntax-color-parenthes                 : @syntax-text-color;
+@syntax-color-brackets                  : @syntax-text-color;
+
+// Literals
+@syntax-color-string                    : @light-green;
+@syntax-color-regexp                    : @light-yellow;
+@syntax-color-number                    : #6898BB;
+@syntax-color-symbol                    : #6898BB;
+@syntax-color-unit                      : @syntax-color-symbol;
+
+// Errors (fg = foreground, bg = background)
+@syntax-deprecated-fg                   : darken(@syntax-color-modified, 50%);
+@syntax-deprecated-bg                   : @syntax-color-modified;
+@syntax-illegal-fg                      : white;
+@syntax-illegal-bg                      : @syntax-color-removed;
+
+// Variables
+@syntax-color-variable                  : @syntax-text-color;
+@syntax-color-global-variable           : #D0D0FF;
+@syntax-color-static-variable           : @dark-purple;
+@syntax-color-constant                  : @dark-purple;
+@syntax-color-property                  : @dark-purple;
+@syntax-color-builtin-variable          : @syntax-color-keyword;
+
+// Functions and methods
+@syntax-color-function-declaration      : @light-yellow;
+@syntax-color-function-call             : @light-yellow;
+@syntax-color-method-declaration        : @light-yellow;
+@syntax-color-method-call               : @light-yellow;
+@syntax-color-builtin-function          : #8888C6;
+
+// Classes
+@syntax-color-class                     : @syntax-text-color;
+@syntax-color-superclass                : @syntax-text-color;
+@syntax-color-annotation                : #BBB529;
+@syntax-color-generic                   : @dark-purple;
+
+// HTML
+@syntax-color-tag                       : @light-red;
+@syntax-color-attribute                 : @light-yellow;
+
+// Markup
+@syntax-color-url                       : lighten(@syntax-accent, 4%);
+
+// Markdown
+@syntax-color-md-headings               : @light-red;
+@syntax-color-md-bold                   : @dark-orange;
+@syntax-color-md-italics                : @dark-purple;
+@syntax-color-md-quote                  : @light-orange;

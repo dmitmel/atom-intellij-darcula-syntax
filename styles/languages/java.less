@@ -1,0 +1,20 @@
+.source.java {
+    .storage.type.generic {
+        color      : @syntax-color-generic;
+        font-weight: bold;
+    }
+
+    .comment.javadoc {
+        color: @syntax-color-doc-comment;
+    }
+}
+
+.source.java-properties {
+    .meta.key-pair {
+        color: light-red;
+
+        & > .punctuation {
+            color: @mono-1;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.markup {
+    &.link {
+        color          : @syntax-color-url;
+        text-decoration: underline;
+    }
+
+    &.heading {
+        color: @syntax-color-md-headings;
+
+        .punctuation.definition.heading {
+            color: @light-blue;
+        }
+    }
+
+    &.strike {
+        text-decoration: line-through;
+    }
+
+    &.bold {
+        color      : @syntax-color-md-bold;
+        font-weight: bold;
+    }
+
+    &.italic {
+        color     : @syntax-color-md-italics;
+        font-style: italic;
+    }
+
+    &.quote {
+        color: @syntax-color-md-quote;
+    }
+
+    &.changed {
+        color: @dark-purple;
+    }
+
+    &.deleted {
+        color: light-red;
+    }
+
+    &.inserted {
+        color: @dark-yellow;
+    }
+
+    &.raw {
+        color: @dark-yellow;
+    }
+}
