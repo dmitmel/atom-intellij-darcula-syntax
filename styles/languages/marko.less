@@ -1,0 +1,28 @@
+.text.marko {
+    .marko-tag {
+        color: @syntax-text-color !important;
+    }
+
+    .marko-attribute {
+        font-weight: bold;
+        color      : @syntax-color-keyword !important;
+    }
+
+    .meta.tag.sgml {
+        color      : @syntax-color-keyword;
+        font-weight: bold;
+
+        .punctuation.definition.marko-tag {
+            color: @syntax-color-keyword !important;
+        }
+    }
+
+    .marko-placeholder {
+        background-color: transparent;
+        :first-child,
+        :last-child {
+            color      : @syntax-color-keyword;
+            font-weight: bold;
+        }
+    }
+}

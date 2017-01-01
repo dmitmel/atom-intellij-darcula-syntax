@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 0.1.2 - Support for [Marko tablemplates](http://markojs.com)
+
+-   [Atom package for the Marko templating engine](https://atom.io/packages/language-marko) contains default stylesheet,
+    but in some places it's wrong. So this patch contains better configuration of that stylesheet.
+-   Added highlighting for HTML's DOCTYPE.
+
 ## 0.1.1 - Better Haskell highlighting
 
 -   Configured bold font and text color for non-Prelude Haskell types in type signatures.
