@@ -1,7 +1,7 @@
 {
   "name": "intellij-darcula-syntax",
   "theme": "syntax",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Theme for Atom inspired by JetBrain's Darcula theme.",
   "keywords": [
     "syntax",
