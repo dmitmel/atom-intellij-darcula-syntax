@@ -1,25 +1,25 @@
-.source.json {
-    .meta.structure.dictionary.json {
-        & > .string.quoted.json {
-            & > .punctuation.string {
+.syntax--source.syntax--json {
+    .syntax--meta.syntax--structure.syntax--dictionary {
+        & > .syntax--string.syntax--quoted {
+            & > .syntax--punctuation.syntax--string {
                 color: @light-red;
             }
             color: @light-red;
         }
     }
 
-    .punctuation.separator {
-        &.array,
-        &.pair {
+    .syntax--punctuation.syntax--separator {
+        &.syntax--array,
+        &.syntax--pair {
             color      : @syntax-color-keyword;
             font-weight: bold;
         }
     }
 
-    .meta.structure.array.json,
-    .meta.structure.dictionary.json {
-        & > .value.json > .string.quoted.json,
-        & > .value.json > .string.quoted.json > .punctuation {
+    .syntax--meta.syntax--structure.syntax--array,
+    .syntax--meta.syntax--structure.syntax--dictionary {
+        & > .syntax--value > .syntax--string.syntax--quoted,
+        & > .syntax--value > .syntax--string.syntax--quoted > .syntax--punctuation {
             color: @syntax-color-string;
         }
     }

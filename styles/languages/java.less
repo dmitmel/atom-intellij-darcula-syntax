@@ -1,19 +1,30 @@
-.source.java {
-    .storage.type.generic {
-        color      : @syntax-color-generic;
-        font-weight: bold;
+.syntax--source.syntax--java {
+    .syntax--storage.syntax--type {
+        &.syntax--generic {
+            color      : @syntax-color-generic;
+            font-weight: bold;
+        }
+
+        &.syntax--primitive.syntax--array .syntax--punctuation.syntax--bracket.syntax--square {
+            color      : @syntax-color-brackets;
+            font-weight: normal;
+        }
     }
 
-    .comment.javadoc {
+    .syntax--comment.syntax--javadoc {
         color: @syntax-color-doc-comment;
+    }
+    .syntax--variable.syntax--other.syntax--object.syntax--property {
+        color     : @syntax-color-static-variable;
+        font-style: italic;
     }
 }
 
-.source.java-properties {
-    .meta.key-pair {
+.syntax--source.syntax--java-properties {
+    .syntax--meta.syntax--key-pair {
         color: light-red;
 
-        & > .punctuation {
+        & > .syntax--punctuation {
             color: @mono-1;
         }
     }

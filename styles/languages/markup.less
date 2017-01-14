@@ -1,48 +1,48 @@
-.markup {
-    &.link {
+.syntax--markup {
+    &.syntax--link {
         color          : @syntax-color-url;
         text-decoration: underline;
     }
 
-    &.heading {
+    &.syntax--heading {
         color: @syntax-color-md-headings;
 
-        .punctuation.definition.heading {
+        .syntax--punctuation.syntax--definition.syntax--heading {
             color: @light-blue;
         }
     }
 
-    &.strike {
+    &.syntax--strike {
         text-decoration: line-through;
     }
 
-    &.bold {
+    &.syntax--bold {
         color      : @syntax-color-md-bold;
         font-weight: bold;
     }
 
-    &.italic {
+    &.syntax--italic {
         color     : @syntax-color-md-italics;
         font-style: italic;
     }
 
-    &.quote {
+    &.syntax--quote {
         color: @syntax-color-md-quote;
     }
 
-    &.changed {
+    &.syntax--changed {
         color: @dark-purple;
     }
 
-    &.deleted {
-        color: light-red;
+    &.syntax--deleted {
+        color: @light-red;
     }
 
-    &.inserted {
+    &.syntax--inserted {
         color: @dark-yellow;
     }
 
-    &.raw {
+    &.syntax--raw {
         color: @dark-yellow;
     }
 }

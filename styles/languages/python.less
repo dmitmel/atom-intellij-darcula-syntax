@@ -1,25 +1,28 @@
-.source.python {
-    .support.magic {
-        &.function,
-        &.variable {
+.syntax--source.syntax--python {
+    .syntax--support.syntax--magic {
+        &.syntax--function,
+        &.syntax--variable {
             color      : @light-red;
             font-weight: normal;
         }
     }
 
-    .entity.function.decorator:extend(.storage.type.annotation){}
+    .syntax--entity.syntax--function.syntax--decorator {
+        color      : @syntax-color-annotation;
+        font-weight: normal;
+    }
 
-    .meta {
-        &.decorator,
-        &.function-call,
-        &.method-call {
-            .arguments .variable.parameter {
+    .syntax--meta {
+        &.syntax--decorator,
+        &.syntax--function-call,
+        &.syntax--method-call {
+            .syntax--arguments .syntax--variable.syntax--parameter {
                 color: @light-red;
             }
         }
     }
 
-    .string > .storage.type.string {
+    .syntax--string > .syntax--storage.syntax--type.syntax--string {
         color      : @syntax-color-string;
         font-weight: normal;
     }

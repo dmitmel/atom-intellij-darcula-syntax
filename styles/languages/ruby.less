@@ -1,18 +1,23 @@
-.source.ruby {
-    .constant.other.symbol > .punctuation {
+.syntax--source.syntax--ruby {
+    .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
         color     : inherit;
         font-style: normal;
     }
 
-    .variable .punctuation {
+    .syntax--variable .syntax--punctuation {
         color: inherit;
     }
 
-    .entity.inherited-class .punctuation.separator.inheritance {
+    .syntax--entity.syntax--inherited-class .syntax--punctuation.syntax--separator.syntax--inheritance {
         font-weight: normal;
     }
 
-    .support.function.kernel {
+    .syntax--support.syntax--function.syntax--kernel {
         color: @syntax-color-builtin-function;
+    }
+
+    .syntax--keyword.syntax--operator.syntax--logical {
+        color      : @syntax-color-keyword;
+        font-weight: bold;
     }
 }

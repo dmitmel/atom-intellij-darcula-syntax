@@ -1,28 +1,28 @@
-.source.shell {
-    .string {
-        &.interpolated,
-        &.other {
+.syntax--source.syntax--shell {
+    .syntax--string {
+        &.syntax--interpolated,
+        &.syntax--other {
             color: @syntax-text-color;
-            & > .punctuation.begin,
-            & > .punctuation.end {
+            & > .syntax--punctuation.syntax--begin,
+            & > .syntax--punctuation.syntax--end {
                 color      : @syntax-color-keyword;
                 font-weight: bold;
             }
         }
     }
 
-    .string.backtick {
+    .syntax--string.syntax--backtick {
         color: @syntax-color-keyword;
     }
 
-    .punctuation.definition.logical-expression {
+    .syntax--punctuation.syntax--definition.syntax--logical-expression {
         color      : @syntax-color-keyword;
         font-weight: bold;
     }
 
-    .keyword.operator {
-        &.list,
-        &.logical {
+    .syntax--keyword.syntax--operator {
+        &.syntax--list,
+        &.syntax--logical {
             color      : @syntax-color-keyword;
             font-weight: bold;
         }

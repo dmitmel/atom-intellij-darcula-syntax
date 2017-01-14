@@ -1,29 +1,42 @@
-.source.css,
-.source.sass {
-    .attribute-name {
-        &.attribute,
-        &.class,
-        &.id,
-        &.pseudo-class,
-        &.pseudo-element {
+.syntax--source.syntax--css,
+.syntax--source.syntax--sass {
+    .syntax--attribute-name {
+        &.syntax--attribute,
+        &.syntax--class,
+        &.syntax--id,
+        &.syntax--pseudo-class,
+        &.syntax--pseudo-element {
             color: @light-yellow;
         }
     }
 
-    .property-name {
+    .syntax--property-name {
         color: @syntax-text-color;
     }
 
-    .elements {
+    .syntax--elements {
         color      : @light-red;
         font-weight: normal;
     }
 
-    .variable.other {
+    .syntax--variable.syntax--other {
         color: @light-red;
     }
 
-    .meta.selector {
-        color: @syntax-text-color;
+    .syntax--meta {
+        &.syntax--selector {
+            color: @syntax-text-color;
+        }
+
+        &.syntax--font-face {
+            color: @syntax-color-constant;
+        }
+    }
+}
+
+.syntax--source.syntax--css.syntax--less {
+    .syntax--keyword.syntax--control.syntax--logical {
+        color      : @syntax-color-keyword;
+        font-weight: bold;
     }
 }

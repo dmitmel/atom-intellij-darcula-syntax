@@ -1,34 +1,38 @@
-.source.js {
-    .keyword.operator {
-        &.delete,
-        &.in,
-        &.instanceof,
-        &.new,
-        &.of,
-        &.typeof,
-        &.void {
+.syntax--source.syntax--js {
+    .syntax--keyword.syntax--operator {
+        &.syntax--delete,
+        &.syntax--in,
+        &.syntax--instanceof,
+        &.syntax--new,
+        &.syntax--of,
+        &.syntax--typeof,
+        &.syntax--void {
             color      : @syntax-color-keyword;
             font-weight: bold !important;
         }
     }
 
-    .comment.documentation .jsdoc {
-        &.type.class {
+    .syntax--comment.syntax--documentation .syntax--jsdoc {
+        &.syntax--type.syntax--class {
             color          : @syntax-color-doc-comment-tag;
             text-decoration: underline;
         }
 
-        &.variable.other {
+        &.syntax--variable.syntax--other {
             color: @syntax-color-parameter;
         }
 
-        &.entity.name.type.instance {
+        &.syntax--entity.syntax--name.syntax--type.syntax--instance {
             color: @syntax-color-class;
         }
     }
 
-    .entity.name.function.constructor {
+    .syntax--entity.syntax--name.syntax--function.syntax--constructor {
         color      : @syntax-color-keyword;
         font-weight: bold;
+    }
+
+    .syntax--entity.syntax--name.syntax--type.syntax--console {
+        font-weight: normal;
     }
 }

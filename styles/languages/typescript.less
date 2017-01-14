@@ -1,0 +1,38 @@
+.syntax--source.syntax--ts {
+    .syntax--keyword.syntax--operator.syntax--new {
+        color      : @syntax-color-keyword;
+        font-weight: bold;
+    }
+
+    .syntax--storage.syntax--type {
+        &:not(.syntax--name) {
+            color      : @syntax-color-keyword;
+            font-weight: bold;
+        }
+
+        &.syntax--jsdoc {
+            color          : @syntax-color-doc-comment-tag;
+            text-decoration: underline;
+        }
+    }
+
+    .syntax--meta.syntax--definition {
+        &.syntax--object.syntax--property {
+            color: @syntax-color-static-variable;
+        }
+
+        &.syntax--function {
+            color: @syntax-color-function-declaration;
+        }
+
+        &.syntax--method {
+            color: @syntax-color-method-declaration;
+        }
+    }
+
+    .syntax--variable.syntax--other.syntax--object.syntax--property {
+        color      : @syntax-color-static-variable;
+        font-weight: normal;
+        font-style : italic;
+    }
+}

@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.1.2 - Rework for [Atom 1.13](http://blog.atom.io/2017/01/10/atom-1-13.html)
+
+-   Better support for TypeScript
+-   Total rework for Atom 1.13
+
 ## 0.1.2 - Support for [Marko tablemplates](http://markojs.com)
 
 -   [Atom package for the Marko templating engine](https://atom.io/packages/language-marko) contains default stylesheet,
