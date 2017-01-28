@@ -1,9 +1,13 @@
 # CHANGELOG
 
+## 1.0.1 - Bug fixes
+
+-   Decimal point now has color of numeric constant.
+
 ## 1.0.0 - Rework for [Atom 1.13](http://blog.atom.io/2017/01/10/atom-1-13.html)
 
--   Better support for TypeScript
--   Total rework for Atom 1.13
+-   Better support for TypeScript.
+-   Total rework for Atom 1.13.
 
 ## 0.1.2 - Support for [Marko tablemplates](http://markojs.com)
 
