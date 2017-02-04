@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.2 - Bug fixes
+
+-   Fixed bug with color of package definition (<code>package <b>a.b.c</b></code>).
+
 ## 1.0.1 - Bug fixes
 
 -   Decimal point now has color of numeric constant.

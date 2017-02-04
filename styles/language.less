@@ -50,11 +50,19 @@
     &.syntax--class,
     &.syntax--extends,
     &.syntax--function,
-    &.syntax--modifier:not(.syntax--import),
+    &.syntax--modifier,
     &.syntax--type.syntax--primitive,
     &.syntax--var {
         color      : @syntax-color-keyword;
         font-weight: bold;
+    }
+
+    &.syntax--modifier {
+        &.syntax--import,
+        &.syntax--package {
+            color      : @syntax-text-color;
+            font-weight: normal;
+        }
     }
 
     &.syntax--todo {
