@@ -22,8 +22,11 @@
         font-weight: normal;
     }
 
-    .syntax--variable.syntax--other {
-        color: @light-red;
+    .syntax--variable {
+        &.syntax--other,
+        &.syntax--scss {
+            color: @light-red;
+        }
     }
 
     .syntax--meta {

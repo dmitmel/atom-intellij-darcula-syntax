@@ -4,6 +4,7 @@
 
 -   Changed color of ID in CSS selectors
 -   Changed colors of SASS variables
+-   Added colors for variables in SCSS
 
 ## 1.0.3 - Bug fixes
 
