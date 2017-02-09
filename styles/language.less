@@ -118,8 +118,7 @@
     &.syntax--character.syntax--escape {
         color: @syntax-color-keyword;
     }
-
-    &.syntax--numeric {
+    &.syntax--numeric:not(.syntax--hex-value) {
         color: @syntax-color-number;
     }
 

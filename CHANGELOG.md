@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.7 - Bug fixes
+
+-   Fixed bug with color of hex color in SCSS.
+
 ## 1.0.6 - Bug fixes
 
 -   Fixed bug with color of key-value separator in SCSS variable declaration.
