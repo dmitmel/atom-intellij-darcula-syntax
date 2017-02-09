@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 1.0.4 - Bug fixes
+
+-   Changed color of ID in CSS selectors
+-   Changed colors of SASS variables
+
+## 1.0.3 - Bug fixes
+
+-   Fixed bug with italic font in color constant.
+
 ## 1.0.2 - Bug fixes
 
 -   Fixed bug with color of package definition (<code>package <b>a.b.c</b></code>).

@@ -3,10 +3,13 @@
     .syntax--attribute-name {
         &.syntax--attribute,
         &.syntax--class,
-        &.syntax--id,
         &.syntax--pseudo-class,
         &.syntax--pseudo-element {
             color: @light-yellow;
+        }
+
+        &.syntax--id {
+            color: @syntax-color-symbol;
         }
     }
 
@@ -24,6 +27,13 @@
     }
 
     .syntax--meta {
+        &.syntax--variable-declaration,
+        &.syntax--variable-usage {
+            & > .syntax--punctuation.syntax--definition.syntax--entity {
+                color: @light-red;
+            }
+        }
+
         &.syntax--selector {
             color: @syntax-text-color;
         }
@@ -38,5 +48,29 @@
     .syntax--keyword.syntax--control.syntax--logical {
         color      : @syntax-color-keyword;
         font-weight: bold;
+    }
+}
+
+.syntax--source.syntax--sass {
+    .syntax--operator {
+        &.syntax--control,
+        &.syntax--logical {
+            color      : @syntax-color-keyword;
+            font-weight: bold;
+        }
+    }
+}
+
+.source--syntax.source--sass {
+    .syntax--meta {
+        &.syntax--variable-declaration,
+        &.syntax--variable-usage {
+            &.syntax--mixin > .syntax--variable.syntax--other {
+                color: @light-yellow;
+            }
+            &:not(.syntax--mixin) > .syntax--punctuation.syntax--definition.syntax--entity {
+                color: @light-red;
+            }
+        }
     }
 }

@@ -105,6 +105,7 @@
 
 .syntax--constant {
     color: @syntax-color-constant;
+    &.syntax--enum,
     &:not(.syntax--language, .syntax--character, .syntax--numeric, .syntax--other, .syntax--regexp, .syntax--symbol) {
         font-style: italic;
     }
@@ -130,11 +131,6 @@
 
         &.syntax--unit {
             color: @syntax-color-unit;
-        }
-
-        &,
-        &.syntax--enum {
-            font-style: italic;
         }
     }
 
