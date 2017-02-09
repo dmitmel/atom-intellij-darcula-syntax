@@ -45,6 +45,10 @@
             color: @syntax-color-constant;
         }
     }
+
+    .syntax--punctuation.syntax--separator.syntax--key-value {
+        color: @syntax-text-color;
+    }
 }
 
 .syntax--source.syntax--css.syntax--less {
@@ -62,9 +66,7 @@
             font-weight: bold;
         }
     }
-}
 
-.source--syntax.source--sass {
     .syntax--meta {
         &.syntax--variable-declaration,
         &.syntax--variable-usage {

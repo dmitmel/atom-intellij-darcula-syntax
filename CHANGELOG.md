@@ -1,13 +1,17 @@
 # CHANGELOG
 
+## 1.0.6 - Bug fixes
+
+-   Fixed bug with color of key-value separator in SCSS variable declaration.
+
 ## 1.0.5 - Bug fixes
 
--   Added colors for variables in SCSS
+-   Added colors for variables in SCSS.
 
 ## 1.0.4 - Bug fixes
 
--   Changed color of ID in CSS selectors
--   Changed colors of SASS variables
+-   Changed color of ID in CSS selectors.
+-   Changed colors of SASS variables.
 
 ## 1.0.3 - Bug fixes
 
