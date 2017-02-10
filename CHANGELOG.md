@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.8 - Bug fixes
+
+-   Fixed bug with color of SCSS variables.
+
 ## 1.0.7 - Bug fixes
 
 -   Fixed bug with color of hex color in SCSS.

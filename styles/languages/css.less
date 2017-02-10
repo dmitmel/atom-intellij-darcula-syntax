@@ -73,9 +73,12 @@
             &.syntax--mixin > .syntax--variable.syntax--other {
                 color: @light-yellow;
             }
-            &:not(.syntax--mixin) > .syntax--punctuation.syntax--definition.syntax--entity {
-                color: @light-red;
-            }
         }
+    }
+}
+
+.syntax--source.syntax--scss {
+    .syntax--meta.syntax--set.syntax--variable {
+        color: @syntax-text-color;
     }
 }
