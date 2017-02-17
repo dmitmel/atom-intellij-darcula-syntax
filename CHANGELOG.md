@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.9 - Bug fixes
+
+-   Fixed bug with `const` keyword in JavaScript
+
 ## 1.0.8 - Bug fixes
 
 -   Fixed bug with color of SCSS variables.
