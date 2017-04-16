@@ -1,4 +1,12 @@
-.syntax--markup {
+.syntax--markup,
+.syntax--source.syntax--asciidoc,
+.syntax--source.syntax--gfm {
+    -webkit-font-smoothing: auto;
+
+    .syntax--link .syntax--entity {
+        color: @syntax-color-string;
+    }
+
     &.syntax--link {
         color          : @syntax-color-url;
         text-decoration: underline;
@@ -44,5 +52,9 @@
 
     &.syntax--raw {
         color: @dark-yellow;
+    }
+
+    .syntax--list {
+        color: @light-red;
     }
 }

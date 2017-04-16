@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.0.11 - Bug fixes
+
+-   Adjusted brightness of invisible characters
+-   Changed colors of Python's logical operators
+-   Changed colors of GFM's lists and links
+
 ## 1.0.10 - Bug fixes
 
 -   Fixed bug with color of functions in Python.
